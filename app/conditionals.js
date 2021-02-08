@@ -1,7 +1,9 @@
 //1. Given two numbers, write a function that will return  the larger number
 
 function largerNum(num1, num2) {
-    // you code here
+    if(num1 > num2){
+        return(num1)
+    }
 
 }
 

@@ -7,7 +7,29 @@
     // output: 7
 
 function daysPosition(day, offset) {
+    switch(new Date().getDay()){
+        case 0:
+            day = "Sunday";
+            break;
+          case 1:
+            day = "Monday";
+            break;
+          case 2:
+             day = "Tuesday";
+            break;
+          case 3:
+            day = "Wednesday";
+            break;
+          case 4:
+            day = "Thursday";
+            break;
+          case 5:
+            day = "Friday";
+            break;
+          case 6:
+            day = "Saturday";
 
+    }
 }
 
 
@@ -27,7 +49,40 @@ function daysPosition(day, offset) {
  */
 
  function golfScore(score, par) {
-
+    switch(par||score){
+    case 1: 
+        par==-3
+        score==1
+        return("Ace")
+        break;
+    case 2:
+        par==-2
+        score==2
+        return("Eagle")
+        break;
+    case 3:
+        par==-1
+        score==3
+        return("Birdie")
+        break;
+    case 4:
+        par==0
+        score==4
+        return("Par")
+        break;
+    case 5: 
+        par==1
+        score==5
+        return("Bogie")
+    case 6: 
+        par==2
+        score==5
+        return("Double Bogie")
+    case 7: 
+        par>=3
+        score==6
+        return("Ouch")
+    }
  }
  
 
